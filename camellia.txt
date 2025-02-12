@@ -1,18 +1,10 @@
 repo init -u https://github.com/PixelBuildsROM/android_manifest -b unity --depth=1
-
 git clone https://github.com/naokoshoto/device_xiaomi_camellia.git -b alpha-14 device/xiaomi/camellia
-
 git clone https://github.com/naokoshoto/vendor_xiaomi_camellia.git -b fourteen vendor/xiaomi/camellia
-
 git clone --depth=1 --single-branch https://github.com/naokoshoto/device_xiaomi_camellia-kernel.git device/xiaomi/camellia-kernel
-
 rm -rf "device/mediatek/sepolicy_vndr"
 rm -rf "hardware/mediatek"
 rm -rf "hardware/xiaomi"
-
-
 git clone https://github.com/pqenablers-devices/android_device_mediatek_sepolicy_vndr -b lineage-21 device/mediatek/sepolicy_vndr
-
 git clone https://github.com/pqenablers-devices/android_hardware_mediatek -b lineage-21 hardware/mediatek
-
 git clone https://github.com/pqenablers-devices/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
